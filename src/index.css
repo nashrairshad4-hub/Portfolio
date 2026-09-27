@@ -1,0 +1,62 @@
+:root {
+  --cover-leather: #16281f;
+  --cover-leather-dark: #0a1510;
+  --gold: #c9a227;
+  --gold-soft: #e7cf8e;
+  --page-ivory: #faf3e2;
+  --page-ivory-shadow: #efe2c3;
+  --ink: #2a251e;
+  --ink-soft: #6b5f4d;
+  --ribbon: #7c2a2a;
+  --ribbon-soft: #9c3f3f;
+  --room: #0e1512;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-script: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--room);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
